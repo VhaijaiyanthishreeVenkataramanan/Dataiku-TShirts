@@ -37,11 +37,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "vhaijaiyanthishree.venkataramanan@dataiku.com"
     },
-    "lastModifiedOn": 1690378478759,
+    "lastModifiedOn": 1690378608514,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -69,8 +69,13 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {"name":"customer_id","type":"string"},
+      {"name":"ip","type":"string"},
+      {"name":"pages_visited","type":"double"},
+      {"name":"campain","type":"boolean"}
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
