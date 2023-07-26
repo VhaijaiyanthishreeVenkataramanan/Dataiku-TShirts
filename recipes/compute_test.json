@@ -4,10 +4,12 @@
   "optionalDependencies": false,
   "params": {
     "envSelection": {
-      "envMode": "INHERIT"
+      "envMode": "EXPLICIT_ENV",
+      "envName": "dash"
     },
     "containerSelection": {
-      "containerMode": "INHERIT"
+      "containerMode": "EXPLICIT_CONTAINER",
+      "containerConf": "CPU-S-0.5-cpu-2Gb-Ram"
     },
     "skipPrerunValidate": false
   },
@@ -40,11 +42,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "vhaijaiyanthishree.venkataramanan@dataiku.com"
     },
-    "lastModifiedOn": 1690378481617,
+    "lastModifiedOn": 1690378557347,
     "extendedProperties": {}
   },
   "creationTag": {
