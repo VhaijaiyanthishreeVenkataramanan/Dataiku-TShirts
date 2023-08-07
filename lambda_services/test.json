@@ -1,6 +1,28 @@
 {
   "name": "test",
-  "endpoints": [],
+  "endpoints": [
+    {
+      "modelRef": "Vs6j4B8H",
+      "useJava": true,
+      "computePropensity": true,
+      "outputExplanations": false,
+      "individualExplanationParams": {
+        "method": "ICE",
+        "nbExplanations": 3,
+        "drawInScoredSet": false,
+        "subChunkSize": 5000,
+        "shapleyBackgroundSize": 100
+      },
+      "mlFlowOutputStyle": "PARSED",
+      "testQueries": [],
+      "enrichMapping": [],
+      "healthCheckQueries": [],
+      "returnPostEnrichData": false,
+      "auditPostEnrichData": false,
+      "id": "test",
+      "type": "STD_PREDICTION"
+    }
+  ],
   "authMethod": "PUBLIC",
   "authRealm": {
     "queryKeys": []
@@ -12,11 +34,11 @@
   },
   "deploymentMonitoring": [],
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "vhaijaiyanthishree.venkataramanan@dataiku.com"
     },
-    "lastModifiedOn": 1691375280943,
+    "lastModifiedOn": 1691375360486,
     "extendedProperties": {}
   },
   "creationTag": {
