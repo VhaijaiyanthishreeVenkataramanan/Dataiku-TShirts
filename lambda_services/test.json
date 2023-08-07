@@ -14,7 +14,18 @@
         "shapleyBackgroundSize": 100
       },
       "mlFlowOutputStyle": "PARSED",
-      "testQueries": [],
+      "testQueries": [
+        {
+          "name": "Query #1",
+          "q": {
+            "features": {
+              "categorical_feature1": "value1",
+              "numerical_feature1": 42,
+              "categorical_feature2": "value2"
+            }
+          }
+        }
+      ],
       "enrichMapping": [],
       "healthCheckQueries": [],
       "returnPostEnrichData": false,
@@ -34,11 +45,11 @@
   },
   "deploymentMonitoring": [],
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "vhaijaiyanthishree.venkataramanan@dataiku.com"
     },
-    "lastModifiedOn": 1691375364584,
+    "lastModifiedOn": 1691375698598,
     "extendedProperties": {}
   },
   "creationTag": {
