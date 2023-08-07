@@ -1,4 +1,5 @@
 {
+  "name": "test",
   "endpoints": [],
   "authMethod": "PUBLIC",
   "authRealm": {
@@ -11,11 +12,11 @@
   },
   "deploymentMonitoring": [],
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "vhaijaiyanthishree.venkataramanan@dataiku.com"
     },
-    "lastModifiedOn": 1691375278305,
+    "lastModifiedOn": 1691375280943,
     "extendedProperties": {}
   },
   "creationTag": {
