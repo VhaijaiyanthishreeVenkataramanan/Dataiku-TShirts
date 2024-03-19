@@ -2,14 +2,6 @@
   "type": "step_based",
   "name": "kubectl",
   "active": false,
-  "creationTag": {
-    "versionNumber": 0,
-    "lastModifiedBy": {
-      "login": "vhaijaiyanthishree.venkataramanan@dataiku.com"
-    },
-    "lastModifiedOn": 1710874574348,
-    "extendedProperties": {}
-  },
   "checklists": {
     "checklists": []
   },
@@ -22,7 +14,30 @@
   "triggers": [],
   "reporters": [],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "custom_python_wBuudzYQsxJOrlK5s4UbEg",
+        "type": "custom_python",
+        "name": "Step #1",
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "script": "import subprocess\n\n# Define the command you want to execute\ncommand \u003d [\"kubectl\", \"config\", \"view\"]\n\n# Use subprocess.run to execute the command\n# capture_output\u003dTrue captures the command\u0027s standard output and standard error\nresult \u003d subprocess.run(command, capture_output\u003dTrue, text\u003dTrue)\n\n# Check if the command was executed successfully\nif result.returncode \u003d\u003d 0:\n    # If successful, print the standard output\n    print(\"Command output:\", result.stdout)\nelse:\n    # If there was an error, print the standard error\n    print(\"Error:\", result.stderr)",
+          "envSelection": {
+            "envMode": "EXPLICIT_ENV",
+            "envName": "test39"
+          },
+          "proceedOnFailure": false
+        }
+      }
+    ]
   },
   "automationLocal": false,
   "customFields": {}
