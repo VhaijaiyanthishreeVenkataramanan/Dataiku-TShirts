@@ -7,7 +7,8 @@
       "envMode": "INHERIT"
     },
     "containerSelection": {
-      "containerMode": "INHERIT"
+      "containerMode": "EXPLICIT_CONTAINER",
+      "containerConf": "CPU-S-0.5-cpu-2Gb-Ram"
     },
     "skipPrerunValidate": false
   },
