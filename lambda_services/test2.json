@@ -1,0 +1,29 @@
+{
+  "endpoints": [],
+  "authMethod": "PUBLIC",
+  "authRealm": {
+    "queryKeys": []
+  },
+  "oauth2Config": {
+    "keysFormat": "JWKS_URI",
+    "jwkUriConnectTimeout": 500,
+    "jwkUriReadTimeout": 500,
+    "jwkUriSizeLimit": 51200,
+    "scopeClaimFormat": "STRING",
+    "scopeClaimKey": "scope"
+  },
+  "deploymentMonitoring": [],
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "vhaijaiyanthishree.venkataramanan@dataiku.com"
+    },
+    "lastModifiedOn": 1710864825282,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
