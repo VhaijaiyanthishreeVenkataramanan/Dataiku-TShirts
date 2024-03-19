@@ -61,8 +61,14 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {"name":"customer_id","type":"string"},
+      {"name":"birth","type":"string"},
+      {"name":"price_first_item_purchased","type":"double"},
+      {"name":"gender","type":"string"},
+      {"name":"revenue","type":"bigint"}
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
