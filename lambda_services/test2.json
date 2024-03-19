@@ -1,4 +1,5 @@
 {
+  "name": "test2",
   "endpoints": [],
   "authMethod": "PUBLIC",
   "authRealm": {
